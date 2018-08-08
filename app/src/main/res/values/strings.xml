@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Rail Status</string>
+    <string name="about">About</string>
+    <string name="pnr_status">PNR Status</string>
+    <string name="history">HISTORY</string>
+    <string name="enter_your_10_digit_pnr_number">Enter your 10 digit PNR number</string>
+    <string name="submit">Submit</string>
+    <string name="about_the_app">About the app</string>
+    <string name="click_to_clear">click_to_clear</string>
+    <string name="your_pnr_status">Your PNR status</string>
+    <string name="error_in_retrieving">Error in retrieving pnr status. Please try after some time.</string>
+    <string name="enter_valid_pnr">Enter a valid 10 digit PNR</string>
+    <string name="check_network">Check your internet connection</string>
+    <string name="empty_response">Empty response from server. Please try after some time.</string>
+    <string name="booking_status">Booking status</string>
+    <string name="current_status">Current status</string>
+    <string name="passenger_index">Passenger %1$s:</string>
+    <string name="distance_from_boarding_station">Distance from boarding station:</string>
+    <string name="distance_from_boarding_station_value">The distance between your current location and your boarding station is %1$s KMS</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="about_the_app_description">This app is made for Capstone project as part of Android Developer-2 Nanodegree with support from UDACITY.\n \n
+        Some of the valid(As of date Aug 9,2018) sample PNR numbers 4864694858, 4557275159, 4659657321, 4559282038 to try out. Long press to copy.</string>
+    <string name="entry_deleted">Entry deleted from DB</string>
+    <string name="no_history_found">No history found</string>
+</resources>
+
