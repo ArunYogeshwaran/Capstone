@@ -139,16 +139,10 @@ public class ShowPNRStatusActivity extends AppCompatActivity implements GoogleAp
 
     @Override
     public void onConnectionSuspended(int i) {
-        Toast.makeText(ShowPNRStatusActivity.this,
-                "onConnectionSuspended: " + String.valueOf(i),
-                Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Toast.makeText(ShowPNRStatusActivity.this,
-                "onConnectionFailed: " + connectionResult.toString(),
-                Toast.LENGTH_SHORT).show();
     }
 
     @SuppressLint("MissingPermission")
@@ -174,13 +168,13 @@ public class ShowPNRStatusActivity extends AppCompatActivity implements GoogleAp
                     } else {
                         distanceContainer.setVisibility(View.GONE);
                         progressBar.setVisibility(View.GONE);
-                        Toast.makeText(ShowPNRStatusActivity.this,
-                                "getCurrentLocation - Location null", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
         };
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                        this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
             //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
@@ -256,8 +250,6 @@ public class ShowPNRStatusActivity extends AppCompatActivity implements GoogleAp
         } else {
             distanceContainer.setVisibility(View.GONE);
             progressBar.setVisibility(View.GONE);
-            Toast.makeText(ShowPNRStatusActivity.this,
-                    "onLocationChanged - Location null", Toast.LENGTH_SHORT).show();
         }
     }
 }
